@@ -280,6 +280,7 @@ Students are encouraged to:
 
 * 💼 MERN Stack Developer & Trainer
 * 🌐 GitHub: https://github.com/Vinay-Pratap-Singh-Sengar
+* 💼 LinkedIn: https://www.linkedin.com/in/vinaypratap1711/
 
 ---
 
