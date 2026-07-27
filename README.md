@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="assets/banner.png" width="100%">
+</p>
 # 🚀 MU - Complete MERN Stack Training Repository
 
 Welcome to the **MU (MERN University)** repository.
