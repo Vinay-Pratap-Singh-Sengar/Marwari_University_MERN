@@ -249,7 +249,16 @@ cd MU
 
 # 📌 Recommended Learning Path
 
-<List><List.Item><Text inline weight="semibold">HTML</Text></List.Item><List.Item><Text inline weight="semibold">CSS</Text></List.Item><List.Item><Text inline weight="semibold">JavaScript</Text></List.Item><List.Item><Text inline weight="semibold">React.js</Text></List.Item><List.Item><Text inline weight="semibold">Node.js</Text></List.Item><List.Item><Text inline weight="semibold">Express.js</Text></List.Item><List.Item><Text inline weight="semibold">MongoDB</Text></List.Item><List.Item><Text inline weight="semibold">Authentication</Text></List.Item><List.Item><Text inline weight="semibold">Full Stack Projects</Text></List.Item><List.Item><Text inline weight="semibold">Deployment</Text></List.Item></List>
+1. 🌐 HTML
+2. 🎨 CSS
+3. ⚡ JavaScript
+4. ⚛️ React.js
+5. 🟢 Node.js
+6. 🚂 Express.js
+7. 🍃 MongoDB
+8. 🔐 Authentication
+9. 🚀 Full Stack Projects
+10. ☁️ Deployment
 
 ---
 
