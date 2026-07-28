@@ -345,7 +345,8 @@ console.log(arr);
 /*
 
 push()       -> Add element at the end.
- -> Remove the last element.
+
+pop()        -> Remove the last element.
 
 shift()      -> Remove the first element.
 
