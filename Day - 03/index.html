@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic HTML Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title displayed on the browser tab -->
+    <title>DOM Manipulation - Day 1</title>
+</head>
+<body>
+
+    <!-- ==========================
+         HTML Elements
+    =========================== -->
+
+    <h1>This is Heading</h1>
+
+    <!-- Paragraph with an ID -->
+    <p id="para1" style="color: red;">
+        This is Paragraph 1
+    </p>
+
+    <!-- Second Paragraph -->
+    <p>This is Paragraph 2</p>
+
+    <!-- Hyperlink -->
+    <a href="https://excalidraw.com/" target="_blank">
+        Click here to open Notes
+    </a>
+
+    <br><br>
+
+    <!-- Button -->
+    <button id="clrChange">
+        Change Paragraph Color
+    </button>
+
+    <script>
+
+        /*************************************************
+         *               DOM MANIPULATION
+         *************************************************/
+
+        /*
+        =====================================
+        1. Accessing the Complete Document
+        =====================================
+        */
+
+        // Displays the entire HTML document
+        console.log(document);
+
+        // Displays the document as an object
+        console.dir(document);
+
+
+        /*
+        =====================================
+        2. Accessing Different Parts of Document
+        =====================================
+        */
+
+        console.log(document.head);
+        console.log(document.body);
+        console.log(document.title);
+
+
+        /*
+        =====================================
+        3. Selecting Elements by Tag Name
+        =====================================
+        */
+
+        const paragraphs = document.getElementsByTagName("p");
+        console.log("All Paragraphs:", paragraphs);
+
+
+        /*
+        =====================================
+        4. Selecting Element by ID
+        =====================================
+        */
+
+        const para1 = document.getElementById("para1");
+        console.log("Paragraph with ID:", para1);
+
+
+        /*
+        =====================================
+        5. Changing CSS Using JavaScript
+        =====================================
+        */
+
+        // Change paragraph colour immediately
+        para1.style.color = "pink";
+
+
+        /*
+        =====================================
+        6. Selecting Button
+        =====================================
+        */
+
+        const btn = document.getElementById("clrChange");
+        console.log("Button:", btn);
+
+
+        /*
+        =====================================
+        7. Creating a Function
+        =====================================
+        */
+
+        function changeColor() {
+            para1.style.color = "blue";
+        }
+
+
+        /*
+        =====================================
+        8. Event Listener
+        =====================================
+        */
+
+        btn.addEventListener("click", changeColor);
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Theme Change</title>
+</head>
+
+<body id="bdy">
+
+    <!-- Heading displayed on webpage -->
+    <h1>Change Theme</h1>
+
+    <!-- Button used to change the theme -->
+    <button id="btn" onclick="changeTheme">Click me</button>
+
+
+    <script>
+
+        // Selecting the body element using its id "bdy"
+        const body = document.getElementById('bdy');
+
+        // Selecting the button element using its id "btn"
+        const btn = document.getElementById('btn');
+
+        // Creating a function to change the theme
+        function changeTheme (){
+            // Changing the background color of the body to black
+            body.style.backgroundColor = "black";
+
+            // Changing the text color of the body to white
+            body.style.color = "white";
+        }
+
+        // Adding click event to the button
+        // When the button is clicked, changeTheme function will execute
+        btn.addEventListener('click', changeTheme);
+
+    </script>
+
+</body>
+
+</html>

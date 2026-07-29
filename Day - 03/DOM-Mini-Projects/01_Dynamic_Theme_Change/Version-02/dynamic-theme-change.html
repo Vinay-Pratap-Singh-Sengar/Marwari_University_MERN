@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Theme Toggle</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        text-align: center;
+        margin-top: 100px;
+        transition: 0.5s;
+      }
+
+      .dark {
+        background-color: black;
+        color: white;
+      }
+
+      button {
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body id="bdy">
+    <h1>Theme Toggle</h1>
+
+    <button id="btn">Change Theme</button>
+
+    <script>
+      const body = document.getElementById("bdy");
+      const btn = document.getElementById("btn");
+
+      btn.addEventListener("click", function () {
+        body.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
