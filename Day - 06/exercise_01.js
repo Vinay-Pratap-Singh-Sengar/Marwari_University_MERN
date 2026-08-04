@@ -10,7 +10,6 @@ function downloadFile() {
     });
 }
 
-downloadFile()
-.then((message)=>{
+downloadFile().then((message)=>{
     console.log(message);
 });

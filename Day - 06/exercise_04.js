@@ -3,7 +3,6 @@ function placeOrder(stock){
     return new Promise((resolve,reject)=>{
 
         console.log("Checking Stock...");
-
         setTimeout(()=>{
 
             if(stock){
@@ -20,7 +19,6 @@ function placeOrder(stock){
 }
 
 placeOrder(true)
-
 .then((message)=>{
     console.log(message);
 })
