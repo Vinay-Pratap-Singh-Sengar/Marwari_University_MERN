@@ -8,7 +8,6 @@
 // Example:
 // fetch("https://jsonplaceholder.typicode.com/users");
 
-
 // =========================================
 // Example 1: fetch() returns a Promise
 // =========================================
@@ -24,7 +23,6 @@
 // Output:
 // Promise { <pending> }
 
-
 // =========================================
 // Example 2: Access the Response Object
 // =========================================
@@ -37,7 +35,6 @@
 //         console.log(response);
 //     });
 
-
 // =========================================
 // What is response.json() ?
 // =========================================
@@ -49,7 +46,6 @@
 //
 // IMPORTANT:
 // response.json() also returns a Promise.
-
 
 // =========================================
 // Example 3: Get Actual Data
@@ -70,7 +66,6 @@
 //         console.log(users);
 //     });
 
-
 // =========================================
 // Example 4: Error Handling using .catch()
 // =========================================
@@ -78,22 +73,6 @@
 // Here the URL is incorrect.
 // Since the request cannot be completed,
 // the Promise is rejected and .catch() executes.
-
-fetch("wrong-url")
-    .then((response) => {
-        // This converts the response into JSON.
-        // It will only execute if the request is successful.
-        return response.json();
-    })
-    .then((data) => {
-        // Print the actual data received from the server.
-        console.log(data);
-    })
-    .catch((error) => {
-        // Handle any error that occurs during the request.
-        console.log("Error:", error);
-    });
-
 
 // =========================================
 // Fetch API Flow
@@ -123,3 +102,49 @@ Actual JavaScript Object
       ▼
 .catch(error)
 */
+
+// async function getData() {
+//     try {
+//         // Fetch data from the server
+//         const response = await fetch("https://jsonplaceholder.typicode.com/todos");
+
+//         // Convert response into JSON
+//         const data = await response.json();
+
+//         // Print the received data
+//         for(let i = 0 ; i < 5; i++){
+//             console.log(data[i].id);
+//             console.log(data[i].title);
+//         }
+//     } catch (error) {
+//         // Handle any error that occurs
+//         console.log("Error:", error);
+//     }
+// }
+
+// // // Call the function
+// getData();
+
+// task : fetch the user data and print the id , name , email and city on the console.
+
+// [{},{},{},{},{},{},{},{},{},{},{},{},{}]
+
+async function getUsersData() {
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+
+    const data = await response.json();
+
+    for (let i = 0; i < data.length; i++) {
+      console.log(data[i].id);
+      console.log(data[i].name);
+      console.log(data[i].email);
+      console.log(data[i].address.city);
+      console.log("-----------------------");
+    }
+  } catch (error) {
+      console.log(error)
+  }
+}
+
+getUsersData();
