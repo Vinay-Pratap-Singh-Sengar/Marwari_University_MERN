@@ -413,7 +413,6 @@
 // // --------------------------------------------------
 
 console.log("Start");
-
 setTimeout(()=>{
     console.log("Timeout 1");
     Promise.resolve().then(()=>{
@@ -432,5 +431,4 @@ Promise.resolve()
 .then(()=>{
     console.log("Promise 3");
 });
-
 console.log("End");
