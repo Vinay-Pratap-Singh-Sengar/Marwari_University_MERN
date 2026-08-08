@@ -412,23 +412,25 @@
 // // Combines Promises, async behavior and multiple timers.
 // // --------------------------------------------------
 
-console.log("Start");
-setTimeout(()=>{
-    console.log("Timeout 1");
-    Promise.resolve().then(()=>{
-        console.log("Promise 1");
-    });
-},0);
+// console.log("Start");
+// setTimeout(()=>{
+//     console.log("Timeout 1");
+//     Promise.resolve().then(()=>{
+//         console.log("Promise 1");
+//     });
+// },0);
 
-Promise.resolve()
-.then(()=>{
-    console.log("Promise 2");
-    setTimeout(()=>{
-        console.log("Timeout 2");
-    },0);
-    return Promise.resolve();
-})
-.then(()=>{
-    console.log("Promise 3");
-});
-console.log("End");
+// Promise.resolve()
+// .then(()=>{
+//     console.log("Promise 2");
+//     setTimeout(()=>{
+//         console.log("Timeout 2");
+//     },0);
+//     return Promise.resolve();
+// })
+// .then(()=>{
+//     console.log("Promise 3");
+// });
+// console.log("End");
+
+

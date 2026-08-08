@@ -1,0 +1,218 @@
+JavaScript Array Methods — Homework
+Part A — map() — 5 Questions
+🟢 Easy 1 — Double the Numbers
+
+Create an array:
+
+let numbers = [2, 4, 6, 8, 10];
+
+Using map(), create a new array where every number is multiplied by 2.
+
+Expected output:
+
+[4, 8, 12, 16, 20]
+🟢 Easy 2 — Convert Names to Uppercase
+
+Create an array:
+
+let names = ["vinay", "rahul", "aman", "neha"];
+
+Using map(), create a new array containing all names in uppercase.
+
+Expected output:
+
+["VINAY", "RAHUL", "AMAN", "NEHA"]
+🟡 Intermediate 3 — Calculate Square
+
+Create:
+
+let numbers = [1, 2, 3, 4, 5, 6];
+
+Using map(), create a new array containing the square of every number.
+
+Expected output:
+
+[1, 4, 9, 16, 25, 36]
+🟡 Intermediate 4 — Extract Student Names
+
+Create:
+
+let students = [
+  { name: "Vinay", age: 24 },
+  { name: "Rahul", age: 22 },
+  { name: "Aman", age: 23 },
+  { name: "Neha", age: 21 }
+];
+
+Using map(), create a new array containing only the student names.
+
+Expected output:
+
+["Vinay", "Rahul", "Aman", "Neha"]
+🔴 Hard 5 — Calculate Total Price
+
+Create:
+
+let products = [
+  { name: "Laptop", price: 50000, quantity: 2 },
+  { name: "Mouse", price: 500, quantity: 3 },
+  { name: "Keyboard", price: 1500, quantity: 2 }
+];
+
+Using map(), create a new array where each object contains:
+
+name
+totalPrice
+
+totalPrice = price × quantity
+
+Expected output:
+
+[
+  { name: "Laptop", totalPrice: 100000 },
+  { name: "Mouse", totalPrice: 1500 },
+  { name: "Keyboard", totalPrice: 3000 }
+]
+Part B — filter() — 5 Questions
+🟢 Easy 1 — Find Even Numbers
+
+Create:
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+Using filter(), create a new array containing only even numbers.
+
+Expected output:
+
+[2, 4, 6, 8, 10]
+🟢 Easy 2 — Find Numbers Greater Than 50
+
+Create:
+
+let numbers = [20, 55, 10, 80, 45, 90, 30];
+
+Using filter(), return only numbers greater than 50.
+
+Expected output:
+
+[55, 80, 90]
+🟡 Intermediate 3 — Students Who Passed
+
+Create:
+
+let students = [
+  { name: "Vinay", marks: 85 },
+  { name: "Rahul", marks: 32 },
+  { name: "Aman", marks: 67 },
+  { name: "Neha", marks: 28 },
+  { name: "Priya", marks: 91 }
+];
+
+Using filter(), return students whose marks are 50 or above.
+
+Expected output:
+
+[
+  { name: "Vinay", marks: 85 },
+  { name: "Aman", marks: 67 },
+  { name: "Priya", marks: 91 }
+]
+🟡 Intermediate 4 — Find Adults
+
+Create:
+
+let people = [
+  { name: "A", age: 17 },
+  { name: "B", age: 22 },
+  { name: "C", age: 15 },
+  { name: "D", age: 30 },
+  { name: "E", age: 19 }
+];
+
+Using filter(), return only people whose age is 18 or greater.
+
+🔴 Hard 5 — Filter Products by Multiple Conditions
+
+Create:
+
+let products = [
+  { name: "Laptop", price: 60000, category: "electronics" },
+  { name: "Mouse", price: 800, category: "electronics" },
+  { name: "Shirt", price: 1500, category: "clothing" },
+  { name: "Mobile", price: 30000, category: "electronics" },
+  { name: "Shoes", price: 2500, category: "clothing" }
+];
+
+Using only filter(), find products that:
+
+belong to "electronics"
+AND have a price less than ₹50,000
+Part C — reduce() — 5 Questions
+🟢 Easy 1 — Find the Sum
+
+Create:
+
+let numbers = [10, 20, 30, 40, 50];
+
+Using reduce(), calculate the sum of all numbers.
+
+Expected output:
+
+150
+🟢 Easy 2 — Find the Product
+
+Create:
+
+let numbers = [2, 3, 4, 5];
+
+Using reduce(), calculate the product of all numbers.
+
+Expected output:
+
+120
+🟡 Intermediate 3 — Find the Maximum Number
+
+Create:
+
+let numbers = [45, 12, 89, 34, 67, 91, 23];
+
+Using reduce(), find the largest number in the array.
+
+Expected output:
+
+91
+🟡 Intermediate 4 — Calculate Total Cart Price
+
+Create:
+
+let cart = [
+  { name: "Laptop", price: 50000 },
+  { name: "Mouse", price: 500 },
+  { name: "Keyboard", price: 1500 },
+  { name: "Headphone", price: 2000 }
+];
+
+Using reduce(), calculate the total price of all products.
+
+Expected output:
+
+54000
+🔴 Hard 5 — Calculate Total Marks
+
+Create:
+
+let students = [
+  { name: "Vinay", marks: [80, 75, 90] },
+  { name: "Rahul", marks: [60, 70, 65] },
+  { name: "Aman", marks: [90, 85, 95] }
+];
+
+Using reduce(), calculate the total marks obtained by each student.
+
+Expected output:
+
+[
+  { name: "Vinay", total: 245 },
+  { name: "Rahul", total: 195 },
+  { name: "Aman", total: 270 }
+]
